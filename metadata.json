@@ -1,0 +1,6 @@
+{
+  "name": "ATLAS Cybersecurity Platform",
+  "description": "Unified mission-grade cybersecurity platform with autonomous operations, compliance assessment, threat intelligence, and human-in-the-loop verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #050B14;
+  color: #E2E8F0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   ATLAS Global Typography Hierarchy & Design System Tokens
+   ========================================================================== */
+
+/* 1. Page Title */
+.atlas-page-title {
+  font-family: var(--font-sans);
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+}
+
+.atlas-page-desc {
+  font-family: var(--font-sans);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  color: #94A3B8; /* slate-400 */
+  line-height: 1.125rem;
+  margin-top: 0.25rem;
+}
+
+/* 2. Section Heading (Standardized for all section-level headings) */
+.atlas-section-heading,
+.atlas-section-title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem; /* 12px - matches ATLAS left nav & system administration */
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: normal;
+  color: #E2E8F0; /* slate-200 */
+  transition: color 150ms ease;
+}
+
+.atlas-section-heading:hover,
+.atlas-section-title:hover,
+.group:hover .atlas-section-heading,
+.group:hover .atlas-section-title {
+  color: #FFFFFF;
+}
+
+/* 3. Card Title */
+.atlas-card-title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: normal;
+  color: #E2E8F0; /* slate-200 */
+}
+
+/* 4. Body Text */
+.atlas-body-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  color: #94A3B8; /* slate-400 */
+}
+
+/* 5. Secondary Text (Helper text, subtext, descriptions) */
+.atlas-secondary-text {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem; /* 11px */
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: normal;
+  color: #94A3B8; /* slate-400 */
+}
+
+/* 6. Metadata */
+.atlas-metadata {
+  font-family: var(--font-sans);
+  font-size: 0.625rem; /* 10px */
+  font-weight: 500;
+  line-height: 0.875rem;
+  letter-spacing: 0.05em;
+  color: #64748B; /* slate-500 */
+}
+
+/* 7. Button Label */
+.atlas-button-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: normal;
+}
+
+/* 8. Status Label / Badge */
+.atlas-status-label {
+  font-family: var(--font-sans);
+  font-size: 0.625rem; /* 10px */
+  font-weight: 600;
+  line-height: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Shared Cards & Containers */
+.atlas-card {
+  background-color: #0C1524;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.875rem;
+}
+
+.atlas-card-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: #94A3B8;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.atlas-card-value {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.atlas-badge {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.atlas-button {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
